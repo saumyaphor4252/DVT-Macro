@@ -1,0 +1,11 @@
+void dataframe()
+{
+   auto fileName = "HistParameters.csv";
+   auto df = ROOT::RDF::MakeCsvDataFrame(fileName);
+   auto d2 = df.Display({"Variable", "Bins"});
+   //auto cut3 = [](double x) { return x < .5; };
+   // std::cout<<df<<std::endl;
+   // d2.Report()->Print();
+   //  auto d1=df.Display("");
+    d2->Print();
+}
